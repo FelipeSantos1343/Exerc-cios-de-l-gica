@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+        p{
+            color: white;
+        }
+        button{
+            color: rgb(0, 0, 0);
+        }
+    </style>
+    <h1>Exercícios Manzano</h1>
+    <p>Alguns exercícios retornam com alerta e outros por meio do console</p>
+    <h1>Página 46</h1>
+    <p>A presentar os resultados de uma tabuada de multiplicar (de 1 até 10) de um número qualquer. </p>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <p id="5"></p>
+    <p id="6"></p>
+    <p id="7"></p>
+    <p id="8"></p>
+    <p id="9"></p>
+    <p id="10"></p>
+    <button onclick="tabuadaWhile()">Botão</button>
+    <p>B Apresentar o total da soma obtida dos cem primeiros números inteiros (1+2+3+4+...+98+99+100). </p>
+    <button onclick="somarAteCemWhile()">Botão</button>
+    <p>C Elaborar um programa que apresente no final o somatório dos valores pares existentes na faixa de 1 até 500.</p>
+    <button onclick="somarParAtequinhentosWhile()">Botão</button>
+    <p>D Apresentar todos os valores numéricos inteiros ímpares situados na faixa de 0 a 20. Para verificar se o número é ímpar, efetuar dentro da malha a verificação lógica desta condição com a instrução se, perguntando se o número é ímpar; sendo, mostre-o; não sendo, passe para o próximo passo.</p>
+    <button onclick=" imparAtevinteWhile()">Botão</button>
+    <p>E e F Apresentar os resultados das potências de 3, variando do expoente 0 até o expoente 15. Deve ser considerado  que  qualquer  número  elevado  a  zero  é  1,  e  elevado  a  1  é  ele  próprio.  Observe  que neste exercício não pode ser utilizado o operador de exponenciação do portuguol (^). </p>
+    <button onclick="potenciaWhile()">Botão</button>
+    <p>G Escreva  um  programa  que  apresente  a  série  de  Fibonacci  até  o  décimo  quinto  termo.  A  série  de Fibonacci  é  formada  pela  seqüência:  1,  1,  2,  3,  5, 8,  13,  21,  34,  ...,  etc.  Esta  série  se  caracteriza pela  soma  de  um  termo  atual  com  o  seu  anterior  subseqüente,  para  que  seja  formado  o  próximo valor da seqüência. Portanto começando com os números 1, 1 o próximo termo é 1+1=2, o próximo é 1+2=3, o próximo é 2+3=5, o próximo 3+5=8, etc. </p>
+    <button onclick="fibonacciWhile()">Botão</button>
+    <p>H Elaborar um programa que apresente os valores de conversão de graus Celsius em Fahrenheit, de 10 em 10 graus, iniciando a contagem em 10 graus Celsius e finalizando em 100 graus Celsius. O programa   deve   apresentar   os   valores   das   duas   temperaturas.   A   fórmula   de   f = parentese 9c + 160 parentese /5, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius. </p>
+    <button onclick="fahrenheitParaCelsiusWhile()">Botão</button>
+    <p>I Elaborar um programa que efetue a leitura de 10 valores numéricos e apresente no final o total do somatório e a média aritmética dos valores lidos.</p>
+    <button onclick="dezvValoresWhile()">Botão</button>
+    <p>J  Elaborar  um  programa  que  apresente  os  resultados  da  soma  e  da  média  aritmética  dos  valores pares situados na faixa numérica de 50 a 70.</p>
+    <button onclick="mediaAteSetenteWhile()">Botão</button>
+    <p>K Elaborar  um  programa  que  possibilite  calcular  a área  total  de  uma  residência  (sala,  cozinha, banheiro, quartos, área de serviço, quintal, garagem, etc.). O programa deve solicitar a entrada do nome, a largura e o comprimento de um determinado cômodo. Em seguida, deve apresentar a área 
+        MANZANO, José Augusto N. G., Estudo Dirigido: ALGORITMOS - Editora Érica, 2000.- 47 - do  cômodo  lido  e  também  uma  mensagem  solicitando  do  usuário  a  confirmação  de  continuar calculando  novos  cômodos.  Caso  o  usuário  responda  “NAO”,  o  programa  deve  apresentar  o  valor total acumulado da área residencial. </p>
+        <button onclick="calcularAreaWhile()">Botão</button>
+    <p>L Elaborar  um  programa  que  efetue  a  leitura  de  valores  positivos  inteiros  até  que  um  valor  negativo seja  informado.  Ao  final  devem  ser  apresentados  o  maior  e  o  menor  valores  informados  pelo usuário.</p>
+    <button onclick="maiorMenorWhile()">Botão</button>
+        <h1>Página 50</h1>
+    <script src="js/manzano.js"></script>
+    <p>A Apresentar os quadrados dos números inteiros de 15 a 200. </p>
+    <button onclick="quadrado15a200DoWhile()">Botão</button>
+    <p>B Elaborar um programa que apresente no final o somatório dos valores pares existentes na faixa de 1 até 500. </p>
+    <button onclick="somarParAte500DoWhile()">Botão</button>
+    <p>C  Apresentar  todos  os  números  divisíveis  por  4  que  sejam  menores  que  200.  Para  verificar  se  o número  é  divisível  por  4,  efetuar  dentro  da  malha  a  verificação  lógica  desta  condição  com  a instrução se,  perguntando  se  o  número  é  divisível;  sendo,  mostre-o;  não  sendo,  passe  para  o próximo passo. A variável que controlará o contador deve ser iniciada com o valor 1</p>
+    <button onclick="divisiverlPor4Ate200DoWhile()">Botão</button>
+    <p>D Elaborar um programa que efetue o cálculo e no final apresente o somatório do número de grãos de trigo que se pode obter num tabuleiro de xadrez, obedecendo à seguinte regra: colocar um grão de trigo no primeiro quadro e nos quadros seguintes o dobro do quadro anterior. Ou seja, no primeiro quadro coloca-se 1 grão, no segundo quadro colocam-se 2 grãos (neste momento têm-se 3 grãos), no  terceiro  quadro  colocam-se  4  grãos  (tendo  neste momento  7  grãos),  no  quarto  colocam-se  8 grãos  (tendo-se  então  15  grãos)  até  atingir  o  sexagésimo  quarto  (64o)  quadro.  Utilize  variáveis  do tipo real como acumuladores. </p>
+    <button onclick="somarGraosDoWhile()">Botão</button>
+    <p>E Elaborar um programa que efetue a leitura de 15 valores numéricos inteiros e no final apresente o total do somatório da fatorial de cada valor lido. </p>
+    <button onclick="fatorial15NumerosDoWhile()">Botão</button>
+    <p>F Elaborar  um  programa  que  efetue  a  leitura  sucessiva  de  valores  numéricos  e  apresente  no  final  o total do somatório, a média aritmética e o total de valores lidos. O programa deve fazer as leituras dos  valores  enquanto  o  usuário  estiver  fornecendo  valores  positivos.  Ou  seja,  o  programa  deve parar  quando  o  usuário  fornecer  um  valor  negativo. Não  se  esqueça  que  o  usuário  pode  entrar como primeiro número um número negativo, portanto, cuidado com a divisão por zero no cálculo da média.  </p>
+    <button onclick="somarPositivosDoWhile()">Botão</button>
+    <p>G  Elaborar  um  programa  que  apresente  como  resultado  o  valor  do  fatorial  dos  valores  ímpares situados na faixa numérica de 1 a 10. </p>
+    <button onclick="fatoriaisImpares1a15DoWhile()">Botão</button>
+    <p>H  Elaborar  um  programa  que  possibilite  calcular  a área  total  de  uma  residência  (sala,  cozinha, banheiro, quartos, área de serviço, quintal, garagem, etc.). O programa deve solicitar a entrada do nome, a largura e o comprimento de um determinado cômodo. Em seguida, deve apresentar a área do  cômodo  lido  e  também  uma  mensagem  solicitando  do  usuário  a  confirmação  de  continuar calculando  novos  cômodos.  Caso  o  usuário  responda  “NAO”,  o  programa  deve  apresentar  o  valor total acumulado da área residencial. </p>
+    <button onclick="calcularAreaDoWhile()">Botão</button>
+    <p>I   Elaborar  um  programa  que  efetue  a  leitura  de  valores  positivos  inteiros  até  que  um  valor  negativo seja  informado.  Ao  final  devem  ser  apresentados  o  maior  e  o  menor  valores  informados  pelo usuário. </p>
+    <button onclick="maiorMenorDoWhile()">Botão</button>
+    <p>J Elaborar  um  programa  que  apresente  o  resultado  inteiro  da  divisão  de  dois  números  quaisquer. Para a elaboração do programa, não utilizar em hipótese alguma o conceito do operador aritmético DIV.  A  solução  deve  ser  alcançada  com  a  utilização de  looping.  Ou  seja,  o  programa  deve apresentar como resultado (quociente) quantas vezes o divisor cabe no dividendo. </p>
+    <button onclick="divisaoInteirosDoWhile()">Botão</button>
+    <h1>Página 66</h1>
+    <p>A Apresentar os quadrados dos números inteiros de 15 a 200.</p>
+    <button onclick="quadrados15ate200For()">Botão</button>
+    <p>B Apresentar os resultados de uma tabuada de multiplicar (de 1 até 10) de um número qualquer. </p>
+    <button onclick="tabuadaFor()">Botão</button>
+    <p>C Apresentar o total da soma obtida dos cem primeiros números inteiros (1+2+3+4+...+98+99+100). </p>
+    <button onclick="somarAteCemFor()">Botão</button>
+    <p>D Elaborar um programa que apresente no final o somatório dos valores pares existentes na faixa de 1 até 500<p>
+    <button onclick="somarParAtequinhentosFor()">Botão</button>
+    <p>E Apresentar todos os valores numéricos inteiros ímpares situados na faixa de 0 a 20. Para verificar se o número é ímpar, efetuar dentro da malha a verificação lógica desta condição com a instrução se, perguntando se o número é ímpar; sendo, mostre-o; não sendo, passe para o próximo passo. </p>
+    <button onclick="imparAtevinteFor()">Botão</button>
+    <p>F Apresentar  todos  os  números  divisíveis  por  4  que  sejam  menores  que  200.  Para  verificar  se  o número  é  divisível  por  4,  efetuar  dentro  da  malha  a  verificação  lógica  desta  condição  com  a instrução se,  perguntando  se  o  número  é  divisível;  sendo,  mostre-o;  não  sendo,  passe  para  o próximo passo. A variável que controlará o contador deve ser iniciada com o valor 1. </p>
+    <button onclick="divisiverlPor4Ate200For()">Botão</button>
+    <p>G e H Apresentar os resultados das potências de 3, variando do expoente 0 até o expoente 15. Deve ser considerado  que  qualquer  número  elevado  a  zero  é  1,  e  elevado  a  1  é  ele  próprio.  Observe  que neste exercício não pode ser utilizado o operador de exponenciação do portuguol (^). </p>
+    <button onclick="potenciaFor()">Botão</button>
+    <p>I Escreva  um  programa  que  apresente  a  série  de  Fibonacci  até  o  décimo  quinto  termo.  A  série  de Fibonacci  é  formada  pela  seqüência:  1,  1,  2,  3,  5, 8,  13,  21,  34,  ...,  etc.  Esta  série  se  caracteriza pela  soma  de  um  termo  atual  com  o  seu  anterior  subseqüente,  para  que  seja  formado  o  próximo valor da seqüência. Portanto começando com os números 1, 1 o próximo termo é 1+1=2, o próximo é 1+2=3, o próximo é 2+3=5, o próximo 3+5=8, etc. </p>
+    <button onclick=" fibonacciFor()">Botão</button>
+    <p>J  Elaborar um programa que apresente os valores de conversão de graus Celsius em Fahrenheit, de 10 em 10 graus, iniciando a contagem em 10 graus Celsius e finalizando em 100 graus Celsius. O programa   deve   apresentar   os   valores   das   duas   temperaturas.   A   fórmula   de   conversão é51609+=CF, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius. </p>
+    <button onclick="fahrenheitParaCelsiusFor()">Botão</button>
+    <p>K Elaborar  um  programa  que  apresente  como  resultado  o  valor  do  fatorial  dos  valores  ímpares situados na faixa numérica de 1 a 10. </p>
+    <button onclick="fatoriaisImpares1a15For()">Botão</button>
+</body>
+</html>
